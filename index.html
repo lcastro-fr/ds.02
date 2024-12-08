@@ -13,7 +13,7 @@
   <div class="center vertical">
     <h1>Tps</h1>
     <div class="horizontal">
-      <a href="/dp/" class="btn btn-light">Datos personales</a>
+      <button class="btn btn-light" name="dp" onclick="onButtonClick(this.name)">Datos personales</button>
     </div>
   </div>
   <style>
@@ -33,6 +33,11 @@
       gap: 1rem;
     }
   </style>
+  <script>
+    const onButtonClick = (name) => {
+      window.location.href = window.location.pathname + name
+    }
+  </script>
 </body>
 
 </html>
